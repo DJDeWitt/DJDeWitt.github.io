@@ -1,27 +1,21 @@
-<!-- This template is in markdown, not html, so
-  it will not render beautifully when you copy and
-  paste it into your github.io site, but it will at
-  least be published. Next week you'll be creating a
-  blog template using HTML and CSS and you'll be able
-  to copy and paste the blog posts from week 1 in there
-  to make them pretty next week.
+The Roadmap
+How version control, Git, and GitHub help great ideas become reality
+September 21, 2014
 
-  For now, please replace the title, subtitle (if desired),
-  and date with the text you would like. Markdown is pretty
-  simple, so you can just feel free to type. =) -->
+There’s a moment in the season three Mad Men episode “The Color Blue” where Paul Kinsey, a copywriter at the fictional Sterling Cooper advertising agency, lands upon a truly great idea, inspired by a light-night, scotch-powered conversation with a janitor named Achilles (you can see the clip here: https://www.youtube.com/watch?v=aGm95YakEZo). Creatively satisfied, he retires to his office couch, only to wake in the morning to realize he can’t remember the idea – and he didn’t write it down. 
 
+As protagonist Don Draper puts it when Kinsey is forced to explain why he’s unprepared for their meeting, “I hate when that happens.”
 
-# Title
-#### Subtitle
-#### Date
+Making things is a complex and messy process. The road from a concept in the brain to a fully realized work is riddled with detours, diversions, backtracking, wrong turns, and other obstacles. This is true whether you are writing a story, painting a picture, coding software, or crafting any other creative work. As we take this roundabout path, it becomes easy to get lost, and if we don’t know where we’ve been, it can be immensely difficult to get back on the right track.
 
-Paragraph 1
+When it comes to code, the method of remembering our progress is called version control. As a project becomes more complex, we want to save versions of it at various stages of completion; this way if something goes wrong, we can go back to an earlier version and sleuth for the culprit code that introduced the errors.
 
-Paragraph 2
+To employ version control for their projects, many programmers will use Git, a version control system that enables them to save versions of their work and ultimately push them to an online repository (a file folder) on a social programming site like GitHub. The way this works is rather simple: Once you’ve got Git set up on your computer, you can use Git commands (commands that you’d type into your command line) to affect files on your computer. But wait, Git is just half the story; what’s this GitHub thing?
 
-Paragraph 3
+Think of it this way: If Git is about “saving”, GitHub is about “collaborating”. Let’s say you and a couple friends are writing an essay together for a class project. You can each take turns with the essay, but then only one of you can work on it at a time, and you’ll never be able to finish before your deadline. So you all decide to work on it separately and assemble it later; only to find that half of you decided to write the introduction, and no one bothered to first body paragraph. What you need is a way to have everyone be able to work on a project without stepping on each other’s toes.
 
-Add as many paragraphs as you want!!!
+This is where GitHub comes in. With GitHub, you have a master version of your project stored on GitHub for all your fellow collaborators to access. With the command “git pull” you can essentially get those files from GitHub and store your very own copy of them on your computer. Once you’ve made the changes you want to make, you can then use the commands “git add”, “git commit”, and “git push” to prepare the changes for merging back into the main project on GitHub.
 
+Why so many commands for adding your changed work back into the main project on GitHub? This is where the collaborative power of Git/GitHub really shines. What’s great about this structure is that you can actually let all your other collaborators know that “Hey, I wrote some code that’s ready to be merged with our project! Can someone take a look at what I did and merge it if they’re happy with it?” With GitHub, they can easily see a log of what was changed, added, or removed in a concise message, review the code, and ultimately merge it into the main project. This gives all collaborators a watchful eye in the form of the peers, removing the complexity of collaborative coding and eliminating the potential for bugs to be introduced.
 
-
+As you can imagine, the huge code bases of house-hold name technologies like Facebook and Twitter require novel solutions for their hundreds of engineers to collaborate efficiently and without conflict. With version control, Git, and GitHub, the traffic jams clear up and everyone has their very own open road to drive down. As long as you keep track of where you’ve been, you’ll never have to worry about finding your next great idea.
