@@ -1,0 +1,52 @@
+html {
+	font-family: Arial, sans-serif;
+}
+
+.header{
+	color: #FFFFFF;
+	background-color: #3399FF;
+	text-align: center;
+}
+.nav{
+	background-color: #EBF5FF;
+	text-align: center;
+}
+.content{
+	background-color: #EBF5FF;
+	color: #191950;
+}
+
+
+
+.footer{
+	color: #FFFFFF;
+	background-color: #3399FF;
+	text-align: center;
+}
+a {
+	text-decoration: none;
+}
+
+/* unvisited link */
+a:link {
+    color: #3399FF;
+    text-decoration: none;
+}
+
+/* visited link */
+a:visited {
+    color: #3399FF;
+    text-decoration: none;
+}
+
+/* mouse over link */
+a:hover {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+/* selected link */
+a:active {
+    color: #FFFFFF;
+    text-decoration: none;
+}
