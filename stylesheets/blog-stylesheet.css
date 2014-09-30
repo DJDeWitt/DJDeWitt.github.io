@@ -29,24 +29,28 @@ a {
 
 /* unvisited link */
 a:link {
-    color: #3399FF;
+    color: #FF3300;
     text-decoration: none;
+    font-weight: bold;
 }
 
 /* visited link */
 a:visited {
-    color: #3399FF;
+    color: #FF3300;
     text-decoration: none;
+    font-weight: bold;
 }
 
 /* mouse over link */
 a:hover {
-    color: #FFFFFF;
+    color: #990099;
     text-decoration: none;
+    font-weight: bold;
 }
 
 /* selected link */
 a:active {
-    color: #FFFFFF;
+    color: #990099;
     text-decoration: none;
+    font-weight: bold;
 }
