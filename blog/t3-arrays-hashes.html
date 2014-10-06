@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  	<!-- Links HTML to blog style sheet -->
+  	<link type="text/css" rel="stylesheet" href="../stylesheets/blog-stylesheet.css"/>
+  	<!-- Add blog name here -->
+  	<title>DJ DeWitt Site</title>
+  </head>
+  <body>
+  	<!-- First Div tag: Blog Header -->
+  	<div class="header">
+  		<!-- Insert Website Name Here -->
+  		<h1><a href="./index.html">DJ DeWitt</a></h1>
+  		<!-- Insert Website Subtitle Here -->
+  		<h2>Consumer, Curator, and Creator of Media and Technology</h2>
+  	</div>
+  	<!-- Navigation Menu -->
+  	<div class="nav">
+  		<table width="100%">
+  			<tr>
+  				<td><a href="">Blog</a></td>
+  				<td><a href="">Portfolio</a></td>
+  				<td><a href="">About</a></td>
+  				<td><a href="">Contact</a></td>
+  			</tr>
+  		</table>
+  	</div>
+  	<!-- Third div tag: Actual Blog Article -->
+  	<div class="content">
+  		<!-- Insert Blog Article Title Here -->
+  		<h2>Arrays and Hashes</h2>
+  		<!-- Insert Blog Article Subtitle Here -->
+  		<h3>Learning how to organize information efficiently in Ruby</h3>
+  		<!-- Insert Blog Article Publication Date Here -->
+  		<h4>October 5, 2014</h4>
+  		<!-- Insert Blog Article Text Here -->
+  		<p>
+      Programmers use coding languages to create software, and people use software to solve problems quickly and efficiently. Most software involves the manipulation of data – test scores, mathematical calculations, dates and times, etc. – which means that these programs need a good way to store this data, so that the programmer can easily access the right piece of information at the right time, connecting individual units of data (a list of test scores, for example) in a logical way.<br><br>Now, we could use a variable to hold each unique integer, float, or string that our program needs. If we’re writing a program to store and calculate grades for every student in a class with dozens of test, this can quickly balloon into hundreds of unique variables. This, of course, would cause plenty of errors, and we have no accessible relationship between each variable we’ve created. This is where arrays and hashes come in – they are a new tool that allow us to organize groups of information efficiently.<br><br>Arrays<br><br>Arrays can collect any type of data in an ordered sequence. What this means is, like the code below, you can store different types of data (an integer, a string, a float) in a collection, and then access each of those elements using an index. With arrays, it is important to remember that the first index is actually equal to zero, meaning that the index of the last item in the array is equal to the length of the array minus one!<br><br><code>My_Array = [ 1, “two”, 3.0 ]</code><br><br>Hashes<br><br>A hash is, at first blush, very similar to an array, in that it allows you to collect and store information and then access that information using what appears to be very similar to an index. What is special about hashes is that you actually have control over the index part of the data as well – in hashes, we call our indices keys, and each key has a value associated with it. As you can see in the code below, we have created a hash to store relevant information about a person (me!) and used keys that could be repeated across different hashes for different individuals.<br><br><code>
+      My_Hash = { 
+      "First Name" => “DJ”,
+      "Last Name" => “DeWitt”,
+      “Age” => 23
+      }</code><br><br>As you can see, Ruby offers a number of tools for storing information. Arrays have a number of methods for sorting, accessing, and manipulating the contained data, which is why arrays are especially useful when they contain a single data type, such as a handful of integers (like test scores!) Hashes, on the other hand, are useful for holding a number of values about a single entity – multiple hashes can then be used to compare these data values, because you already know the key you’ve created to access a particular type of information.<br><br>This is just a quick introduction to storing data with arrays and hashes, and Ruby’s many pre-defined methods allow you to use these resources in fantastic new ways. To learn more about these data structures, check out Ruby’s official documentation!</p>
+  	</div>
+  	<!-- Fourth div tag: Footer -->
+  	<div class="footer">
+  		<p>This site is owned by DJ DeWitt (2014).</p>
+  	</div>
+  </body>
+</html>

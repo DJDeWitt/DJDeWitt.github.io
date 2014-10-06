@@ -1,0 +1,19 @@
+th {
+  text-align: center;
+}
+       
+#author{
+  text-align: center;
+}
+
+img {
+  height: 500px;
+  width: auto;
+  border: 1px solid black;
+  border-radius: 15px;
+  box-shadow: 10px 10px 20px orange;;
+}
+
+.vert_align{
+  vertical-align: text-top;
+}
