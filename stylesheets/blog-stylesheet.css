@@ -4,9 +4,17 @@ html {
 
 .header{
 	color: #FFFFFF;
+ 	-webkit-text-fill-color: transparent;
+ 	background: -webkit-linear-gradient(transparent, transparent),
+             url(../imgs/chicago_bridge.png) repeat;
+ 	background: -o-linear-gradient(transparent, transparent);
+ 	-webkit-background-clip: text;
+
 	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 	background-color: #3399FF;
 	text-align: center;
+
+
 }
 .nav{
 	background-color: #EBF5FF;
