@@ -16,7 +16,10 @@ html {
 
 .nav{
 	postion: fixed;
-	top: 400px;
+	width: 100%;
+	left: 0px;
+	top: 64px;
+	height: 64px;
 	background-color: #EBF5FF;
 	text-align: center;
 }
