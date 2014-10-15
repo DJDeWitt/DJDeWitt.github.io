@@ -28,7 +28,9 @@ html {
 .content{
 	background-color: #FAFAFA;
 	color: #101010;
+	top: 128px;
 	/* width: 1000%; */
+	float: left;
 }
 
 
@@ -39,6 +41,7 @@ html {
 	text-align: center;
 	left: 0px;
 	bottom: 0px;
+	float: left;
 }
 a {
 	text-decoration: none;
@@ -46,21 +49,21 @@ a {
 
 /* unvisited link */
 a:link {
-    color: #FF3300;
+    color: #3C0077;
     text-decoration: none;
     font-weight: bold;
 }
 
 /* visited link */
 a:visited {
-    color: #FF3300;
+    color: #3C0077;
     text-decoration: none;
     font-weight: bold;
 }
 
 /* mouse over link */
 a:hover {
-    color: #990099;
+    color: #3C0077;
     text-decoration: none;
     font-weight: bold;
 }
