@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  	<!-- Links HTML to blog style sheet -->
+  	<link type="text/css" rel="stylesheet" href="../stylesheets/blog-stylesheet.css"/>
+  	<!-- Add blog name here -->
+  	<title>DJ DeWitt Site</title>
+  </head>
+  <body>
+  	<!-- First Div tag: Blog Header -->
+  	<div class="header">
+  		<!-- Insert Website Name Here -->
+  		<h1><a href="./index.html">DJ DeWitt</a></h1>
+  		<!-- Insert Website Subtitle Here -->
+  		<h2>Consumer, Curator, and Creator of Media and Technology</h2>
+  	</div>
+  	<!-- Navigation Menu -->
+  	<div class="nav">
+  		<table width="100%">
+  			<tr>
+  				<td><a href="">Blog</a></td>
+  				<td><a href="">Portfolio</a></td>
+  				<td><a href="">About</a></td>
+  				<td><a href="">Contact</a></td>
+  			</tr>
+  		</table>
+  	</div>
+  	<!-- Third div tag: Actual Blog Article -->
+  	<div class="content">
+  		<!-- Insert Blog Article Title Here -->
+  		<h2>Charting Ruby</h2>
+  		<!-- Insert Blog Article Subtitle Here -->
+  		<h3>Find your way around the Ruby .map method</h3>
+  		<!-- Insert Blog Article Publication Date Here -->
+  		<h4>October 14, 2014</h4>
+  		<!-- Insert Blog Article Text Here -->
+  		<p>
+      As we learned in our <a href="./t3-arrays-hashes.html">last lesson</a>, most software involves manipulation of data, and arrays and hashes are powerful tools for storing, manipulating, and retrieving this data. In this lesson, we’ll talk more specifically about the last two of those verbs: data manipulation and data retrieval. We’ll do this through a wonderful little enumerable method called <code>#map</code>.
+      <br><br>
+      Say we have an array of test scores for a class we’re teaching:
+      <br><br>
+      <code>class_scores = [80,65,79,92,66,84,89]</code>
+      <br><br>
+      Now let’s say we decide we’re going to give everyone in the class five points of extra credit (we’re super cool teachers). We could manually add five points to every score in our list, but that would be inefficient. Instead, we’ll use the <code>#map</code> method.
+      <br><br>
+      <code>class_scores.map! { |score| score += 5 }</code>
+      <br><br>
+      Okay, let’s go over what we’re doing here. First, we’ve got the name of our array, then we’re calling the map method on it using dot notation (note, we add the “!” mark because we want to modify the original array).
+      <br><br>
+      Now here’s where the real power of <code>#map</code> gets in. You’ll notice the open and close curly braces after our method, with some stuff inside those curly braces. This is what we like to call a <em>block</em>. Basically the <code>#map</code> method runs whatever is inside this block on every element in the array. In this block, specifically, we’re first defining a variable to store the element (<code>|score|</code>) then adding five to this value using <code>score += 5</code>.
+      <br><br>
+      Of course, running whatever is inside the block on a collection of values (stored in an array or hash) gives us near unlimited potential for efficient data manipulation. Heck, we can even have a print function inside the block, and use the map function for quick data retrieval. Ultimately, <code>#map</code> gives you greater control over your data than you’ve ever had before.
+      </p>
+  	</div>
+  	<!-- Fourth div tag: Footer -->
+  	<div class="footer">
+  		<p>This site is owned by DJ DeWitt (2014).</p>
+  	</div>
+  </body>
+</html>
