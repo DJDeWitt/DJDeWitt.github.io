@@ -11,7 +11,8 @@ html {
 	top: 0px;
 	height: 64px;
 	background-color: #3C0077;
-	text-align: center;
+	text-align: left;
+	float: left;
 }
 
 .nav{
@@ -21,7 +22,8 @@ html {
 	top: 64px;
 	height: 64px;
 	background-color: #EBF5FF;
-	text-align: center;
+	text-align: right;
+	float: left;
 }
 .content{
 	background-color: #FAFAFA;
