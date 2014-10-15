@@ -16,7 +16,7 @@ html {
 }
 
 .nav{
-	postion: fixed;
+	position: fixed;
 	width: 100%;
 	left: 0px;
 	top: 64px;
@@ -37,6 +37,8 @@ html {
 	color: #FAFAFA;
 	background-color: #101010;
 	text-align: center;
+	left: 0px;
+	bottom: 0px;
 }
 a {
 	text-decoration: none;
