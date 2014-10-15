@@ -16,7 +16,7 @@ html {
 
 .nav{
 	postion: fixed;
-	top: 180px;
+	top: 400px;
 	background-color: #EBF5FF;
 	text-align: center;
 }
@@ -29,8 +29,8 @@ html {
 
 
 .footer{
-	color: #FFFFFF;
-	background-color: #3399FF;
+	color: #FAFAFA;
+	background-color: #101010;
 	text-align: center;
 }
 a {
