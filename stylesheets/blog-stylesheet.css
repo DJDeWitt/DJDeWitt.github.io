@@ -50,6 +50,7 @@ body {
 .footer{
 	color: #FAFAFA;
 	background-color: #101010;
+	position: absolute;
 	text-align: center;
 	width: 100%;
 	left: 0px;
