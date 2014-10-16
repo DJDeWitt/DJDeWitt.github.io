@@ -29,7 +29,8 @@ body {
 	height: 32px;
 	background-color: #EBF5FF;
 	text-align: right;
-	float: left;
+	float: right;
+	font-size: 18px;
 }
 .content{
     margin-left: 25%;
