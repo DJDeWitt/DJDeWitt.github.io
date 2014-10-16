@@ -2,6 +2,12 @@ html {
 	font-family: Arial, sans-serif;
 }
 
+body {
+	margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
 .header{
 	color: #FFFFFF;
 	/* text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black; */
@@ -19,8 +25,8 @@ html {
 	position: fixed;
 	width: 100%;
 	left: 0px;
-	top: 32px;
-	height: 64px;
+	top: 64px;
+	height: 32px;
 	background-color: #EBF5FF;
 	text-align: right;
 	float: left;
