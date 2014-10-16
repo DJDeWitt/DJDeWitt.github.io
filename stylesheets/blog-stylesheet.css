@@ -31,10 +31,11 @@ html {
 	width: 50%;
 	left: 0px;
 	top: 200px;
-	margin-left: 400px;
-	margin-right: 400px;
+	margin-left: auto;
+	margin-right: auto;
 	/* width: 1000%; */
-	float: center;
+	float: left;
+	text-align: center;
 }
 
 
