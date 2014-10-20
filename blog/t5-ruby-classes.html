@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  	<!-- Links HTML to blog style sheet -->
+  	<link type="text/css" rel="stylesheet" href="../stylesheets/blog-stylesheet.css"/>
+  	<!-- Add blog name here -->
+  	<title>DJ DeWitt Site</title>
+  </head>
+  <body>
+  	<!-- First Div tag: Blog Header -->
+  	<div class="header">
+  		<!-- Insert Website Name Here -->
+  		<h1><a href="./index.html">DJ DeWitt</a></h1>
+  		<!-- Insert Website Subtitle Here -->
+  		<h2>Consumer, Curator, and Creator of Media and Technology</h2>
+  	</div>
+  	<!-- Navigation Menu -->
+  	<div class="nav">
+  		<table width="100%">
+  			<tr>
+  				<td><a href="">Blog</a></td>
+  				<td><a href="">Portfolio</a></td>
+  				<td><a href="">About</a></td>
+  				<td><a href="">Contact</a></td>
+  			</tr>
+  		</table>
+  	</div>
+  	<!-- Third div tag: Actual Blog Article -->
+  	<div class="content">
+  		<!-- Insert Blog Article Title Here -->
+  		<h2>A Lesson On Class</h2>
+  		<!-- Insert Blog Article Subtitle Here -->
+  		<h3>An introduction to object-oriented programming, classes, and instance variables and methods</h3>
+  		<!-- Insert Blog Article Publication Date Here -->
+  		<h4>October 19, 2014</h4>
+  		<!-- Insert Blog Article Text Here -->
+  		<p>
+      Have you ever thought about why we call computers and calculators what we call them? It’s because they, quite literally, compute and calculate. In other words, they are both a THING that DOES. They’re essential to our lives because they’re able to do actions - these computations and calculations - that would be way too difficult or time-consuming for a person to do on their own.
+      <br>
+      Your computer and your code may seem like they’re on opposite ends of the hardware-software spectrum, but this conceptualization (“a THING that DOES”) is actually applicable across the board. You see, we make things (computers, calculators, and code) to help us do things, and often those things we want to do have a real-world analog. For example, we could calculate arithmetic using stones or an abacus, but a calculator with pre-defined equations is significantly easier and more time-efficient to use. A calculator is an object, and it’s only one of many objects we can mimic using code. This is probably a good time to mention that by “a THING that DOES”, we really mean “an OBJECT that DOES”. In other words, we’re talking about object-oriented programming.
+      <br>
+      To understand object-oriented programming, we first have to understand how the terminology we use lines up with our conceptualization. Remember how we said the “THING” is the “OBJECT”? Well, your calculator isn’t the only one in the world; there are plenty of calculators exactly like it that all have the same functionality, look, and behavior. In Ruby (and many other object-oriented programming languages), we call this a Class.
+      <br>
+      A calculator Class would essentially be the blueprint for all calculator Objects. The Class defines exactly what variables and methods an Object of that Class will have access to. These variables are essentially what the Object “remembers”, and, in the sense of a calculator, it would be good if our calculator could remember the numbers it is trying to add, subtract, multiply, or divide together!
+      <br>
+      So what are the methods? Well, methods are essentially verbs, they are the “DOES” of our statement. For a calculator, some handy verbs would be “adds”, “subtracts”, and “multiplies”. With these variables and methods, we can guarantee that all of our calculators will be able to perform basic arithmetic.
+      <br>
+      Now that we’ve explained it, let’s take a look at our calculator Class, which currently can only add a new number to an existing number. As you can see below, each new Object of this Class should initialize with a value, which we can then manipulate using the #add method. We can also assign a new value using the #set_value method, and get the current value using the #get_value method.
+      <br>
+      <code>
+      class Calculator
+        def initialize(input_value)
+          @value = input_value
+        end
+
+        def set_value(input_new_value)
+          @value = input_new_value
+        end
+
+        def get_value
+          return @value
+        end
+
+        def add(number_to_add)
+          @value = @value + number_to_add
+        end
+      end
+      </code>
+      <br>
+      You'll notice that we have some variables with an "@" in front of them and some without this symbol. Variables with an "@" at the beginning are called instance variables, and they can be accessed from anywhere within the class, whereas variables without the "@" can only be accessed from within that specific method. This means that @value can be accessed everywhere, but input_new_value can only be accessed in the #set_value method!
+      <br>
+      You’ll notice that we have to have unique methods just for getting our current value and resetting it to a new value. You can imagine that if we allowed our Class to remember lots of values instead of just this one, we would quickly run into way too many lines of code, simply for getting access to and manipulating our variables. Thankfully, Ruby has a solution in the form of attr_ methods. The three attr_ methods look like this:
+      <br>
+      <code>
+      attr_reader :name
+      #is a getter which means that it just returns a value or state outside of the class, but does not change it.
+      attr_writer :best_friend
+      #is a setter which means that you can change the value of the variable outside of the class, but it is not readable.
+      attr_accessor :age
+      #is both a getter and a setter. We can now return and change the value of the variable.
+      </code>
+      <br>
+      The <code>attr_reader</code> method creates a variable that you can output, or "read", but can't change. The <code>attr_writer</code> method creates a variable you can read, but you can change. The <code>attr_accessor</code> method creates a variable you can change and read. Now, let’s try rewriting our previous calculator Class using attr_ methods…
+      <br>
+      <code>
+      class Calculator
+      attr_accessor :age
+
+        def initialize(input_value)
+          @value = input_value
+        end
+
+        def add(number_to_add)
+          @value = @value + number_to_add
+        end
+      end
+      </code>
+      <br>
+      As you can see, it’s quite shorter! Obviously, this is a fairly simple class, but you can quickly see how important attr_ methods are when dealing with Classes of increasing complexity.
+      </p>
+  	</div>
+  	<!-- Fourth div tag: Footer -->
+  	<div class="footer">
+  		<p>This site is owned by DJ DeWitt (2014).</p>
+  	</div>
+  </body>
+</html>
