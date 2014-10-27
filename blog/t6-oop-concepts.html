@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  	<!-- Links HTML to blog style sheet -->
+  	<link type="text/css" rel="stylesheet" href="../stylesheets/blog-stylesheet.css"/>
+  	<!-- Add blog name here -->
+  	<title>DJ DeWitt Site</title>
+  </head>
+  <body>
+  	<!-- First Div tag: Blog Header -->
+  	<div class="header">
+      <p><a href="./index.html" style="font-family:courier; font-size: 200%; font-weight: normal; color: #FFFFFF">DJ DeWitt</a> <!-- Insert Website Name Here -->
+      <span style="font-family:arial; font-size: 100%; color: #FFFFFF">Consumer, Curator, and Creator of Media and Technology</span></p> <!-- Insert Website Subtitle Here -->
+    </div>>
+  	<!-- Navigation Menu -->
+  	<div class="nav">
+  		<table width="100%">
+  			<tr>
+  				<td><a href="">Blog</a></td>
+  				<td><a href="">Portfolio</a></td>
+  				<td><a href="">About</a></td>
+  				<td><a href="">Contact</a></td>
+  			</tr>
+  		</table>
+  	</div>
+  	<!-- Third div tag: Actual Blog Article -->
+  	<div class="content">
+  		<!-- Insert Blog Article Title Here -->
+  		<h2>Time for Class</h2>
+  		<!-- Insert Blog Article Subtitle Here -->
+  		<h3>An introduction to class methods and the power of object-oriented programming</h3>
+  		<!-- Insert Blog Article Publication Date Here -->
+  		<h4>October 26, 2014</h4>
+  		<!-- Insert Blog Article Text Here -->
+  		<p>
+As we’ve discussed previously, we write software to make our life simpler, doing things that it would be inefficient or impossible for us to do manually. Doing arithmetic equations by hand would get tedious, so we create a Calculator class with individual methods for addition, subtraction, etc. This is how classes and methods, a fundamental feature of object-oriented programming languages, helps us simplify our lives using code.
+<br><br>
+These building blocks – classes, methods, variables – come in a variety of shapes and sizes, giving programmers a greater palette of solutions to their problems. For example, different types of variables can have different scopes; class variables can be accessed by every object of a class, whereas instance variables can only be accessed by that particularly object. This diversity gives programmers greater control over the code they write, which, in turn, allows them to write more versatile and efficient code.
+<br><br>
+Like variables, methods also can come in a variety of forms. The type of method you’re probably most familiar with is the instance method, which looks like this:
+<br><br>
+<pre>
+class Calculator
+  def add_numbers(a,b)
+    c = a + b
+  end
+end
+</pre>
+<br>
+As you can see, an instance method is simply defined using the regular “def” syntax. To access an instance method, you simply have to create a new object of the class and then call the method using that object.
+<br><br>
+<pre>
+my_calc = Calculator.new # creates a new object of the Calculator class and assigns it to my_calc
+my_calc.add_numbers(3,4) # returns 7 (the sum of 3 and 4)
+</pre>
+<br>
+Much in the way that there is a class variable and an instance variable, we also have a class method to go along with our instance method. This is how you create, and then call, a class method.
+<br><br>
+<pre>
+class Calculator
+  @@total_calculators = 0
+
+  def initialize
+    @@total_calculators +=1
+  end
+
+  def add_numbers(a,b)
+    c = a + b
+  end
+
+  def self.calculator_count
+    @@total_calculators
+  end
+end
+
+Calculator.calculator_count # will return the value of the class variable total_calculators
+</pre>
+<br>
+As you can see, we’ve added a new method, but this time we affixed <code>self</code> to the beginning of our method name. This is how we turn an instance method into a class method. This method, in particular, returns a class variable that will contain the total number of Calculator objects we’ve created. To do so, we had to make sure we increment this class variable by 1, every time a new object is initialized.
+<br><br>
+You will more frequently use instance variables over class variables, and the same can be said about instance methods and class methods. That said, class methods can help store, manipulate, and access data about an entire class (class methods are accessible by instance methods), giving you significant control over an entire class that can allow you to quickly and efficiently maintain your instances. It may not seem that valuable when you’re only working with singular instances of a class, but when your programs get more complex, you’ll be glad you have class methods as a resource.
+      </p>
+  	</div>
+  	<!-- Fourth div tag: Footer -->
+  	<div class="footer">
+  		<p>This site is owned by DJ DeWitt (2014).</p>
+  	</div>
+  </body>
+</html>
