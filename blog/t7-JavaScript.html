@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  	<!-- Links HTML to blog style sheet -->
+  	<link type="text/css" rel="stylesheet" href="../stylesheets/blog-stylesheet.css"/>
+  	<!-- Add blog name here -->
+  	<title>DJ DeWitt Site</title>
+  </head>
+  <body>
+  	<!-- First Div tag: Blog Header -->
+  	<div class="header">
+      <p><a href="./index.html" style="font-family:courier; font-size: 200%; font-weight: normal; color: #FFFFFF">DJ DeWitt</a> <!-- Insert Website Name Here -->
+      <span style="font-family:arial; font-size: 100%; color: #FFFFFF">Consumer, Curator, and Creator of Media and Technology</span></p> <!-- Insert Website Subtitle Here -->
+    </div>>
+  	<!-- Navigation Menu -->
+  	<div class="nav">
+  		<table width="100%">
+  			<tr>
+  				<td><a href="">Blog</a></td>
+  				<td><a href="">Portfolio</a></td>
+  				<td><a href="">About</a></td>
+  				<td><a href="">Contact</a></td>
+  			</tr>
+  		</table>
+  	</div>
+  	<!-- Third div tag: Actual Blog Article -->
+  	<div class="content">
+  		<!-- Insert Blog Article Title Here -->
+  		<h2>That Five Percent</h2>
+  		<!-- Insert Blog Article Subtitle Here -->
+  		<h3>Recognizing the differences between programming languages</h3>
+  		<!-- Insert Blog Article Publication Date Here -->
+  		<h4>November 4, 2014</h4>
+  		<!-- Insert Blog Article Text Here -->
+  		<p>
+Multi-linguists are individuals that are fluent in a number of languages, and it’s not every day you encounter someone who has mastery over four or more languages. Despite some similar terminology, there are significant differences between human languages and programming languages, and it is because of these differences that programmers are often expected to have mastery over a much greater diversity of types. The most important difference – in fact – is how similar programming languages are to one another!
+<br>
+I wouldn’t go so far as to say “once you’ve learned one programming language, you’ve learned them all!” but that isn’t far from the truth. In fact, there are some basic expectations you’ll develop as you pick up multiple programming languages. For example, that you’ll have access to data types like Integers, Floats, Strings, and Arrays, a number of standard pre-defined methods for manipulating those data types, and a syntactical toolset of conditionals, comparators, and loops. This is true of Ruby, of JavaScript, of Python, and many other languages you decide to pick up. The hard part isn’t learning a new language, but, more specifically, learning the five percent that is different from what you’re already familiar with.
+<br>
+Let’s look at a few examples of what is intentionally the same code in both Ruby and JavaScript.
+<br>
+As we mentioned previously, we expect to be able to create new methods or functions that eliminate code repetition. And we’re right! Check out the method for returning the sum of two values in Ruby:
+<pre>
+def add_values(x,y)
+          return x + y
+end
+</pre>
+And here’s the same method in JavaScript (except in JavaScript, we call methods functions):
+<pre>
+function add_values(x,y){
+    return x + y;
+};
+</pre>
+As you can see, the two methods/functions are very similar, but in Ruby we create a new method with “def” and in JavaScript we write “function”. In JavaScript we use brackets, and in Ruby, a language that largely forgoes brackets, we use the word “end”. You’ll also notice that, unlike Ruby, JavaScript requires semicolons. 
+<br>
+It’s these little changes that require programmers to keep their wits about them when working in multiple languages, as going on auto-pilot for even a moment can cause the syntactical quirks of one language to sneak into the writing of another. This is because despite small differences, there are some generalizations we can make about language differences. For example, JavaScript is significantly more lenient than Ruby, and will throw far less exceptions, instead assuming intent and “rolling with it”, often to disastrous effect. If you accidentally slip into Ruby mode when writing JavaScript, you might not even get an argument error!
+<br>
+The similarities between programming languages make them easy to learn, and a sharp programmer that keeps their wits about them will brush up on syntactical differences before switching. Before you realize it, you’ll be a programming multi-linguist.
+      </p>
+  	</div>
+  	<!-- Fourth div tag: Footer -->
+  	<div class="footer">
+  		<p>This site is owned by DJ DeWitt (2014).</p>
+  	</div>
+  </body>
+</html>
