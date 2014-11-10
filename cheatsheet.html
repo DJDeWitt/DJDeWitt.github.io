@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title>Cheat Sheet</title>
+    <style>
+    
+        body {
+            background-color:black;
+        }
+        div {
+            border:2px solid black;
+            }
+            
+        h3 {
+            font-family: 'Oswald', sans-serif;
+        }
+        #body ul {
+            font-family: 'Oswald', sans-serif;
+        }
+        #header {
+            color: #332F29;
+            text-align:center;
+            width:100%;
+            height:20%;
+            background-color:#CC3910;
+            font-family: 'Play', sans-serif;
+            }
+       
+        #body {
+            color: #332F29;
+            width:90%;
+            height:70%;
+            margin:auto;
+            background-color: #F9FADD;
+        }
+       
+        #footer {
+            height:10%;
+            width:100%;
+            position:relative;
+            bottom:0;
+            text-align:center;
+            color: #F9FADD;
+            background-color: #332F29;
+            font-family: 'Play', sans-serif;
+        }
+    </style>
+  </head>
+
+  <body>
+    <div id="header">
+        <h1>DJ and Ricky's Cheat Sheet</h1>
+    </div>
+    <div id="body">
+            <h3>Basic Tags</h3>
+            <ul>
+                <li>&lt;html&gt;&lt;/html&gt; Creates an HTML document</li>
+                
+                <li>&lt;head&gt;&lt;/head&gt; Sets off the title and other information that isn’t displayed on the web page itself</li>
+                
+                <li>&lt;body&gt;&lt;/body&gt; Sets off the visible portion of the document</li>
+            </ul>
+            <hr>
+            
+<h3>Body Attributes</h3>
+        <ul>
+            <li>&lt;body bgcolor="pink"&gt; Sets the background color, using name or hex value</li>
+        
+            <li>&lt;body text="black"&gt; Sets the text color, using name or hex value</li>
+        
+            <li>&lt;body link="blue"&gt; Sets the color of links, using name or hex value</li>
+        
+            <li>&lt;body vlink="#ff0000"&gt; Sets the color of followed links, using name or hex value</li>
+        
+            <li>&lt;body alink="#00ff00"&gt; Sets the color of links on click</li>
+        
+            <li>&lt;body ondragstart="return false" onselectstart="return false"&gt; Disallows text selection with the mouse and keyboard</li>
+        </ul>
+
+<hr>
+
+        <h3>Text Tags</h3>
+        <ul>
+            <li>&lt;pre&gt;&lt;/pre&gt; Creates preformatted text</li>
+
+            <li>&lt;hl&gt;&lt;/hl&gt; Creates the largest headline</li>
+
+            <li>&lt;h6&gt;&lt;/h6&gt; Creates the smallest headline</li>
+
+            <li>&lt;b&gt;&lt;/b&gt; Creates bold text</li>
+
+            <li>&lt;i&gt;&lt;/i&gt; Creates italic text</li>
+
+            <li>&lt;tt&gt;&lt;/tt&gt; Creates teletype, or typewriter-style text</li>
+
+            <li>&lt;cite&gt;&lt;/cite&gt; Creates a citation, usually italic</li>
+
+            <li>&lt;em&gt;&lt;/em&gt; Emphasizes a word (with italic or bold)</li>
+
+            <li>&lt;strong&gt;&lt;/strong&gt; Emphasizes a word (with italic or bold)</li>
+
+            <li>&lt;font size="3"&gt;&lt;/font&gt; Sets size of font, from 1 to 7</li>
+
+            <li>&lt;font color="green"&gt;&lt;/font&gt; Sets font color, using name or hex value</li>
+        </ul>
+
+<hr>
+
+    <h3>Links</h3>
+
+        <ul>
+            <li>&lt;a href="URL">&lt;/a&gt; Creates a hyperlink</li>
+    
+            <li>&lt;a href="mailto:EMAIL"&gt;&lt;/a&gt; Creates a mailto link</li>
+    
+            <li>&lt;a href="URL"&gt;&lt;img src="URL"&gt; &lt;/a&gt; Creates an image/link</li>
+    
+            <li>&lt;a name="NAME"&gt;&lt;/a&gt; Creates a target location within a document</li>
+    
+            <li>&lt;a href="#NAME"&gt;&lt;/a&gt; Links to that target location from elsewhere in the document</li>
+        </ul>
+
+<hr>
+
+    <h3>Formatting</h3>
+        
+        <ul>
+            <li>&lt;p&gt;&lt;/p&gt; Creates a new paragraph</li>
+    
+            <li>&lt;p align="left"&gt; Aligns a paragraph to the left (default), right, or center.</li>
+    
+            <li>&lt;br&gt; Inserts a line break</li>
+    
+            <li>&lt;blockquote&gt;&lt;/blockquote&gt; Indents text from both sides</li>
+    
+            <li>&lt;dl&gt;</dl&gt; Creates a definition list</li>
+    
+            <li>&lt;dt&gt; Precedes each definition term</li>
+    
+            <li>&lt;dd&gt; Precedes each definition</li>
+    
+            <li>&lt;ol&gt;&lt;/ol&gt; Creates a numbered list</li>
+    
+            <li>&lt;ul&gt;</ul&gt; Creates a bulleted list</li>
+    
+            <li>&lt;li&gt;</li&gt; Precedes each list item, and adds a number or symbol depending upon the type of list selected</li>
+    
+            <li>&lt;div align="left"&gt; A generic tag used to format large blocks of HTML, also used for stylesheets</li>
+    
+            <li>&lt;img src="name"&gt; Adds an image</li>
+    
+            <li>&lt;img src="name" align="left"&gt; Aligns an image: left, right, center; bottom, top, middle</li>
+    
+            <li>&lt;img src="name" border="1"&gt; Sets size of border around an image</li>
+    
+            <li>&lt;hr /&gt; Inserts a horizontal rule</li>
+    
+            <li>&lt;hr size="3" /&gt; Sets size (height) of rule</li>
+    
+            <li>&lt;hr width="80%" /&gt; Sets width of rule, in percentage or absolute value</li>
+    
+            <li>&lt;hr noshade /&gt; Creates a rule without a shadow</li>
+    
+        </ul>
+
+<hr>
+
+<h3>Tables</h3>
+
+    <ul>
+    
+    <li>&lt;table&gt;&lt;/table&gt; Creates a table</li>
+    
+    <li>&lt;tr&gt;&lt;/tr&gt; Sets off each row in a table</li>
+    
+    <li>&lt;td&gt;&lt;/td&gt; Sets off each cell in a row</li>
+    
+    <li>&lt;th&gt;&lt;/th&gt; Sets off the table header (a normal cell with bold, centered text)</li>
+    
+    </ul>
+
+<hr>
+
+<h3>Table Attributes</h3>
+
+    <ul>
+
+        <li>&lt;table border="1"&gt; Sets width of border around table cells</li>
+
+        <li>&lt;table cellspacing="1"&gt; Sets amount of space between table cells</li>
+
+        <li>&lt;table cellpadding="1"&gt; Sets amount of space between a cell’s border and its contents</li>
+
+        <li>&lt;table width="500" or "80%"&gt; Sets width of table, in pixels or as a percentage of document width</li>
+
+        <li>&lt;tr align="left"&gt; or <td align="left"&gt; Sets alignment for cell(s) (left, center, or right)</li>
+
+        <li>&lt;tr valign="top"&gt; or <td valign="top"&gt; Sets vertical alignment for cell(s) (top, middle, or bottom)</li>
+
+        <li>&lt;td colspan="2"&gt; Sets number of columns a cell should span (default=1)</li>
+
+        <li>&lt;td rowspan="4"&gt; Sets number of rows a cell should span (default=1)</li>
+
+        <li>&lt;td nowrap&gt; Prevents the lines within a cell from being broken to fit</li>
+
+    </ul>
+
+<hr>
+
+<h3>Frames</h3>
+<ul>
+    <li>&lt;frameset&gt;&lt;/frameset&gt; Replaces the <body> tag in a frames document; can also be nested in other framesets</li>
+    
+    <li>&lt;frameset rows="value,value"&gt; Defines the rows within a frameset, using number in pixels, or percentage of width</li>
+    
+    <li>&lt;frameset cols="value,value"&gt; Defines the columns within a frameset, using number in pixels, or percentage of width</li>
+    
+    <li>&lt;frame&gt; Defines a single frame — or region — within a frameset</li>
+    
+    <li>&lt;noframes&gt;&lt;/noframes&gt; Defines what will appear on browsers that don’t support frames</li>
+</ul>
+
+<hr>
+
+<h3>Frames Attributes</h3>
+
+<ul>
+    <li>&lt;frame src="URL"&gt; Specifies which HTML document should be displayed</li>
+
+    <li>&lt;frame name="name"&gt; Names the frame, or region, so it may be targeted by other frames</li>
+
+    <li>&lt;frame marginwidth="value"&gt; Defines the left and right margins for the frame; must be equal to or greater than 1</li>
+
+    <li>&lt;frame marginheight="value"&gt; Defines the top and bottom margins for the frame; must be equal to or greater than 1</li>
+
+    <li>&lt;frame scrolling="value"&gt; Sets whether the frame has a scrollbar; value may equal “yes,” “no,” or “auto.” The default, as in ordinary documents, is auto.</li>
+
+    <li>&lt;frame noresize="noresize"&gt; Prevents the user from resizing a frame</li>
+</ul>
+
+<hr>
+
+<h3>Forms</h3>
+    <br>
+    For functional forms, you’ll have to run a script. The HTML just creates the appearance of a form.
+    <ul>
+    <li>&lt;form&gt;&lt;/form&gt; Creates all forms</li>
+    
+    <li>&lt;select multiple name="NAME" size=?&gt;&lt;/select&gt; Creates a scrolling menu. Size sets the number of menu items visible before you need to scroll.</li>
+    
+    <li>&lt;option&gt; Sets off each menu item</li>
+    
+    <li>&lt;select name="NAME"&gt;&lt;/select&gt; Creates a pulldown menu</li>
+    
+    <li>&lt;option&gt; Sets off each menu item</li>
+    
+    <li>&lt;textarea name="NAME" cols=40 rows=8&gt;&lt;/textarea name&gt; Creates a text box area. Columns set the width; rows set the height.</li>
+    
+    <li>&lt;input type="checkbox" name="NAME"&gt; Creates a checkbox. Text follows tag.</li>
+    
+    <li>&lt;input type="radio" name="NAME" value="x"&gt; Creates a radio button. Text follows tag</li>
+    
+    <li>&lt;input type="text" name="NAME" size=20&gt; Creates a one-line text area. Size sets length, in characters.</li>
+    
+    <li>&lt;input type="submit" value="NAME"&gt; Creates a Submit button</li>
+    
+    <li>&lt;button type="submit"&gt;Submit&lt;/button&gt; Creates an actual button that is clicked</li>
+    
+    <li>&lt;input type="image" border=0 name="NAME" src="name.gif"&gt; Creates a Submit button using an image</li>
+    
+    <li>&lt;input type="reset"&gt; Creates a Reset button</li>
+    </ul>
+
+
+
+    </div>
+    <div id="footer">This page is for use when solving mass amounts of code challenges.</div>
+  </body>
+  
+</html>
